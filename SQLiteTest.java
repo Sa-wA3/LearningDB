@@ -34,7 +34,8 @@ public class SQLiteTest {
                 String name = rs.getString("name");
                 int grade = rs.getInt("grade");
                 // System.out.println(student_id + "\t" + name + "\t" + price);
-                System.out.println("会員番号" + student_id + "、" + grade + "年の" + name + "さんですね。");
+                String greeting = "会員番号" + student_id + "、" + grade + "年の" + name + "さんですね。";
+                System.out.println(greeting);
                 System.out.println("今日も勉強頑張っていきましょう！");
             }
             rs.close();
